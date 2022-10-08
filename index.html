@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/calculator.png">
+    <title>Expense Tracker</title>
+</head>
+<body>
+
+
+    <!-- HEADING -->
+    <div class="container mx-auto pt-8 px-2">
+        <h1 class="text-center text-xl md:text-3xl font-bold text-violet-600">Expense Tracker</h1>
+    </div>
+
+
+    <!-- BALANCE -->
+    <div class="container mx-auto py-8 px-2 flex flex-col items-center">
+        <p class="font-bold">YOUR BALANCE</p>
+        <h1 class="text-xl md:text-3xl font-semibold">$<span class="balance">0.00</span></h1>
+    </div>
+
+
+    <!-- CARD -->
+    <div class="container mx-auto flex justify-center ">
+        <div class="flex items-center justify-center space-x-10 bg-white py-5 px-10 shadow-xl">
+            <!-- income -->
+            <div class="">
+                <h1 class="text-lg md:text-xl font-semibold bg-white ">INCOME</h1>
+                <p class="income text-center bg-white text-green-500 text-xl">$0.00</p>
+            </div>
+            
+            <!-- expense -->
+            <div>
+                <h1 class="text-lg md:text-xl font-semibold bg-white ">EXPENSE</h1>
+                <p class="expense text-center bg-white text-red-500 text-xl">$0.00</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- HISTORY -->
+
+    <div class="container mx-auto pt-6 px-2 w-full md:max-w-sm">
+        <p class="font-semibold  text-lg md:text-xl pb-3">History</p>
+        <hr>
+        
+        <div class="max-h-72 overflow-y-scroll">
+            <!-- ITEMS -->
+            <div class="history-items ">
+                
+                <!-- item -->
+                <div class="item flex items-center justify-between bg-white shadow-xl p-2 my-2">
+                    <p class="text bg-white">Salary</p>
+                    <div class="flex items-center space-x-3 bg-white">
+                        <p class="amount bg-white">+100000</p>
+                        <button class="bg-white text-red-600 font-bold">X</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ADD NEW TRANSACTION -->
+    <div class="container mx-auto pt-5 px-2 w-full md:max-w-sm">
+        <p class="font-semibold  text-lg md:text-xl pb-3">Add new transaction</p>
+        <hr>
+
+        <!-- transaction box -->
+        <div class="flex flex-col space-y-5 my-1">
+            <!-- text box -->
+            <div>
+                <p>Text</p>
+                <input type="text" placeholder="Enter Text" class="w-full border-2 border-gray-400 bg-white py-1 place-content-center " id="text">
+            </div>
+
+            <!-- amount box -->
+            <div>
+                <p>Number</p>
+                <p>(negative - expense, positive - income)</p>
+                <input type="number" placeholder="Enter Amount" class="w-full border-2 border-gray-400 bg-white py-1 place-content-center" id="text">
+            </div>
+
+            <!-- BUTTON -->
+            <button class="w-full bg-violet-600 my-4 py-1 text-white font-semibold">Add</button>
+
+        </div>
+
+    </div>
+</body>
+</html>
