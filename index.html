@@ -55,13 +55,13 @@
             <div class="history-items ">
                 
                 <!-- item -->
-                <div class="item flex items-center justify-between bg-white shadow-xl p-2 my-2">
+                <!-- <div class="item flex items-center justify-between bg-white shadow-xl p-2 my-2">
                     <p class="text bg-white">Salary</p>
                     <div class="flex items-center space-x-3 bg-white">
                         <p class="amount bg-white">+100000</p>
-                        <button class="bg-white text-red-600 font-bold">X</button>
+                        <button class="bg-white text-red-600 font-bold delete">X</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -84,16 +84,21 @@
 
             <!-- amount box -->
             <div>
-                <p>Number</p>
+                <p>Amount</p>
                 <p>(negative - expense, positive - income)</p>
-                <input type="number" placeholder="Enter Amount" class="w-full border-2 border-gray-400 bg-white py-1 place-content-center" id="text">
+                <input type="text" placeholder="Enter Amount" class="w-full border-2 border-gray-400 bg-white py-1 place-content-center" id="amount">
             </div>
 
             <!-- BUTTON -->
-            <button class="w-full bg-violet-600 my-4 py-1 text-white font-semibold">Add</button>
+            <button class="w-full bg-violet-600 my-4 py-1 text-white font-semibold" id="btn">Add</button>
 
         </div>
 
     </div>
+
+
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
